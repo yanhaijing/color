@@ -1,0 +1,9 @@
+{
+    "name": "normalize.css",
+    "description": "Normalize.css as a node packaged module",
+    "repos": "https://github.com/necolas/normalize.css.git",
+    "main": "normalize.css",
+    "tag": "master",
+    "reposType": "npm",
+    "version": "3.0.3"
+}

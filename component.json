@@ -1,0 +1,12 @@
+{
+  "protocol": "github",
+  "gihub": {
+    "author": "fis-components"
+  },
+  "dependencies": [
+    "underscore@~1.8.3",
+    "compass-mixins@~0.12.7",
+    "zepto@~1.1.6",
+    "normalize.css@~3.0.3"
+  ]
+}
