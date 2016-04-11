@@ -31,5 +31,10 @@
 
     <script src="lib/mod.js"></script>
     <!--SCRIPT_PLACEHOLDER-->
+    <script>
+        require.async('app/index.es', function (index) {
+            index.init();
+        });
+    </script>
 </body>
 </html>
