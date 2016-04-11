@@ -3,7 +3,7 @@
  * @author yanhaijing.com
  * @date 2015年12月16日 20:17:32
  */
-import $ from 'jquery';
+import $ from 'zepto';
 
 class EventEmitter {
     constructor() {
