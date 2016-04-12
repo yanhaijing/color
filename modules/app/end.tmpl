@@ -1,0 +1,19 @@
+<div class="wgt-end">
+    <p>经鉴定，您是:</p>
+    <p class="score">
+        <#if (score < 5) {#>
+            没有眼睛
+        <#} else if (score < 10) {#>
+            瞎子
+        <#} else if (score < 15) {#>
+            色弱
+        <#} else if (score < 20) {#>
+            色狼
+        <#} else {#>
+            超级大色狼
+        <#}#>
+        LV<#=score#>
+    </p>
+    <a id="try-again" class="btn btn-primary btn-lg">再次挑战</a>
+    <a id="share" class="btn btn-success btn-lg">炫耀一下</a>
+</div>

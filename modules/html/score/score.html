@@ -1,0 +1,9 @@
+<aside class="wgt-score">
+    得分：<span id="score">0</span>
+    时间：<span id="timer">30</span>
+</aside>
+<script>
+    require.async('score.es', function (score) {
+        score.init();
+    });
+</script>

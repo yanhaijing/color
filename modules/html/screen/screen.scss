@@ -2,6 +2,7 @@
 @import "mixin";
 
 .screen {
+    margin-top: 10px;
     padding: 1px;
     background: #ddd;
     @include clearfix();
