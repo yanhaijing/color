@@ -3,6 +3,7 @@
  * @author yanhaijing.com
  */
 import $ from 'zepto';
+import Zepto from 'zepto/touch';
 import {event as ec} from 'util/event/event';
 import {template} from 'util/template/template';
 
