@@ -19,17 +19,32 @@ var time;
 var timer;
 var weibo = {
     url: 'http://yanhaijing.com/color/',
-    title: '看你有多色@颜海镜',
+    title: '看你有多色是一款休闲小游戏，适合所有人群，找出所有色块里颜色不同的一个，快来比比你的眼力吧@颜海镜',
     pic: 'http://yanhaijing.com/inverter/media/5.png'
 };
 var qzone = {
     url: 'http://yanhaijing.com/color/',
     title: '看你有多色',
-    summary: '看你有多色',
-    desc: '看你有多色',
+    summary: '看你有多色是一款休闲小游戏',
+    desc: '看你有多色是一款休闲益智小游戏，适合所有人群，找出所有色块里颜色不同的一个，快来比比你的眼力吧',
     pic: 'http://yanhaijing.com/inverter/media/5.png'
 };
 
+function getlevel(score) {
+    if (score < 5) {
+        return '没有眼睛';
+    } 
+    if (score < 10) {
+        return '瞎子';
+    } 
+    if (score < 15) {
+        return '色弱';
+    } 
+    if (score < 20) {
+        return '色狼';
+    } 
+    return '超级大色狼';
+}
 function restart() {
     score = 0;
     time = 30;
@@ -46,7 +61,8 @@ function init() {
         // 判断是否结束游戏
         if (data.time >= 1 * 1000) {
             timer.stop();
-            $('body').append(endTpl({score}));
+            $('body').append(endTpl({score, level: getlevel(score)}));
+            document.title = '看你有多色，我竟然是' + getlevel(score) + '，我得了' + score + '分，快来挑战我吧！！！'
             return 1;
         }
         ec.emit('time/update', {time: time - parseInt(data.time / 1000, 10)});
@@ -66,6 +82,7 @@ function init() {
 
     // 分享
     $('body').on('click', '.js-share', function (e) {
+        weibo.title = qzone.desc = '看你有多色，我竟然是' + getlevel(score) + '，我得了' + score + '分，快来挑战我吧！！！';
         $('body').append(shareTpl({
             weibo: $.param(weibo),
             qzone: $.param(qzone)
