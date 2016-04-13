@@ -1,9 +1,0 @@
-{
-    "name": "underscore",
-    "description": "JavaScript's functional programming helper library.",
-    "repos": "https://github.com/jashkenas/underscore.git",
-    "main": "underscore.js",
-    "tag": "master",
-    "reposType": "npm",
-    "version": "1.8.3"
-}
