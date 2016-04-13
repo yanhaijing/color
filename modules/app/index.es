@@ -82,7 +82,7 @@ function init() {
 
     // 分享
     $('body').on('click', '.js-share', function (e) {
-        weibo.title = qzone.desc = '看你有多色，我竟然是' + getlevel(score) + '，我得了' + score + '分，快来挑战我吧！！！';
+        weibo.title = qzone.desc = '看你有多色，我竟然是' + getlevel(score) + '，我得了' + score + '分，快来挑战我吧！！！@颜海镜';
         $('body').append(shareTpl({
             weibo: $.param(weibo),
             qzone: $.param(qzone)
