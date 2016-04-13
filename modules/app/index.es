@@ -59,7 +59,7 @@ function init() {
     
     timer.on('tick', function (e, data) {
         // 判断是否结束游戏
-        if (data.time >= 1 * 1000) {
+        if (data.time >= 31 * 1000) {
             timer.stop();
             $('body').append(endTpl({score, level: getlevel(score)}));
             document.title = '看你有多色，我竟然是' + getlevel(score) + '，我得了' + score + '分，快来挑战我吧！！！'
