@@ -1,0 +1,97 @@
+.pop {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.6);
+    .pop-content {
+        margin: 20% auto 0;
+        max-width: 400px;
+        background-color: #fff;
+        border: 1px solid #999;
+        border: 1px solid rgba(0,0,0,.2);
+        border-radius: 6px;
+        box-shadow: 0 3px 9px rgba(0,0,0,.5);
+        background-clip: padding-box;
+        outline: 0;
+    }
+    header {
+        padding: 0 10px;
+        border-bottom: 1px solid #e5e5e5;
+    }
+    .pop-body {
+        padding: 15px;
+        line-height:1.5;
+    }
+    .pop-body li{
+        margin-bottom: 5px;
+    }
+    footer {
+        padding: 10px 10px 10px;
+        text-align: right;
+        border-top: 1px solid #e5e5e5;
+    }
+
+}
+
+.wgt-share {
+    /*S share-btn*/
+    .share-btn a em {
+        background-image: url(img/sns_icon.png);
+        background-repeat: no-repeat;
+    }
+    .share-btn {
+        width: 100%;
+        overflow: hidden;
+        zoom: 1;
+    }
+    .share-btn a {
+        background-color: #fff;
+        border: 1px solid #f1eddf;
+        border-radius: 4px;
+        box-shadow: 0 1px 3px #f1eddf;
+        color: #fff;
+        cursor: pointer;
+        display: block;
+        float: left;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        text-decoration: none;
+        width: 30%;
+    }
+    .share-btn a.share-btn-weibo, .share-btn a.share-btn-qq, .share-btn a.share-btn-weixin {
+        margin-right: 2%;
+    }
+    .share-btn a span {
+        border-radius: 4px 0 0 4px;
+        float: left;
+        text-indent: 5px;
+        width: 60%;
+    }
+    .share-btn a.share-btn-weibo span {
+        background-color: #ff2125;
+    }
+    .share-btn a.share-btn-qq span {
+        background-color: #21aeff;
+    }
+    .share-btn a.share-btn-weixin span {
+        background-color: #3ebd06;
+    }
+    .share-btn a em {
+        background-position: 0 0;
+        display: block;
+        float: right;
+        height: 26px;
+        margin: 2px 8px 0 0;
+        width: 30%;
+    }
+    .share-btn a.share-btn-weibo em {
+        background-position: 0 -32px;
+    }
+    .share-btn a.share-btn-weixin em {
+        background-position: 0 -65px;
+    }
+    /*E share-btn*/
+}

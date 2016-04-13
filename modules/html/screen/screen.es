@@ -38,7 +38,7 @@ function render() {
 function init() {
     render();
 
-    $('#screen').on('click', '.block', function (e) {
+    $('#screen').on('tap', '.block', function (e) {
         var index = $(this).data('index');
         // 点中了
         if (list[index]) {

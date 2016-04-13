@@ -1,0 +1,49 @@
+.wgt-weixin {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    text-align: center;
+    color: #fff;
+    background: rgba(0,0,0,0.8);
+    .qr div {
+        font-size: 2.4em;
+        text-align: center;
+        margin-top: 1em;
+    }
+    .qr .img {
+        display: block;
+        margin: 1em auto;
+        padding-top: 50%;
+        width: 50%;
+        max-width: 300px;
+        background: url(img/qrcode.png);
+        background-size: 100% 100%;
+    }
+    .step .num {
+        display: inline-block;
+        margin: .5em auto;
+        font-size: 3em;
+        width: 1.5em;
+        height: 1.5em;
+        line-height: 1.5em;
+        border-radius: 1em;
+        background-color: #aaa;
+        color: #000;
+    }
+    .step div {
+        font-size: 2em;
+    }
+    .step .img {
+        display: block;
+        width: 70%;
+        padding-top: 93.46%;
+        max-width: 400px;
+        margin: 1em auto;
+        background: url(img/ww_03.png);
+        background-size: 100% 100%;
+    }
+}
