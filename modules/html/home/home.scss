@@ -1,0 +1,19 @@
+.wgt-home {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-top: 50px;
+    font-size: 20px;
+    background: #ffcc00;
+    text-align: center;
+    color: #fff;
+    p {
+        margin-top: 4em;
+    }
+    .btn {
+        margin-top: 4em;
+        width: 50%;
+    }
+}

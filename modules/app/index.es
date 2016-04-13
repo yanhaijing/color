@@ -93,8 +93,10 @@ function init() {
         $(this).remove();
     });
 
-    // 开始游戏
-    restart();
+    $('#start').on('click', function (e) {
+        $('.wgt-home').hide();
+        restart();
+    });
 }
 
 export {init};
