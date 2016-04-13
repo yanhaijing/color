@@ -20,14 +20,14 @@ var timer;
 var weibo = {
     url: 'http://yanhaijing.com/color/',
     title: '看你有多色是一款休闲小游戏，适合所有人群，找出所有色块里颜色不同的一个，快来比比你的眼力吧@颜海镜',
-    pic: 'http://yanhaijing.com/inverter/media/5.png'
+    pic: __uri('/media/6.png')
 };
 var qzone = {
     url: 'http://yanhaijing.com/color/',
     title: '看你有多色',
     summary: '看你有多色是一款休闲小游戏',
     desc: '看你有多色是一款休闲益智小游戏，适合所有人群，找出所有色块里颜色不同的一个，快来比比你的眼力吧',
-    pic: 'http://yanhaijing.com/inverter/media/5.png'
+    pic: __uri('/media/6.png')
 };
 
 function getlevel(score) {
@@ -59,7 +59,7 @@ function init() {
     
     timer.on('tick', function (e, data) {
         // 判断是否结束游戏
-        if (data.time >= 31 * 1000) {
+        if (data.time >= 1 * 1000) {
             timer.stop();
             $('body').append(endTpl({score, level: getlevel(score)}));
             document.title = '看你有多色，我竟然是' + getlevel(score) + '，我得了' + score + '分，快来挑战我吧！！！'

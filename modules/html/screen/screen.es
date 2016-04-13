@@ -7,12 +7,15 @@ import Zepto from 'zepto/touch';
 import {event as ec} from 'util/event/event';
 import {template} from 'util/template/template';
 
-var list;
 var $screen = $('#screen');
 var tpl = __inline('screen.tmpl');
 var levelMap = [2, 3, 4, 5, 5, 6, 6, 7, 7, 7, 8, 8, 8, 8, 9];
 var level = 0;
 var rank = 40;
+var click = document.hasOwnProperty("ontouchstart") ? 'tap' : 'click';
+
+var list;
+
 function render() {
     var size = level >= levelMap.length ? levelMap[levelMap.length - 1] : levelMap[level];
     level = level + 1;
@@ -39,7 +42,7 @@ function render() {
 function init() {
     render();
 
-    $('#screen').on('tap', '.block', function (e) {
+    $('#screen').on(click, '.block', function (e) {
         var index = $(this).data('index');
         // 点中了
         if (list[index]) {

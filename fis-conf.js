@@ -1,7 +1,7 @@
 // 设置项目属性
 fis.set('project.name', 'color');
 fis.set('project.static', '/static');
-fis.set('project.files', ['*.html', 'map.json', '/test/*', 'favicon.ico']);
+fis.set('project.files', ['*.html', 'map.json', '/test/*']);
 
 // 引入模块化开发插件，设置规范为 commonJs 规范。
 
