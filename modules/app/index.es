@@ -61,7 +61,7 @@ function init() {
         // 判断是否结束游戏
         if (data.time >= 31 * 1000) {
             timer.stop();
-            $('body').append(endTpl({score, level: getlevel(score)}));
+            $('.container').append(endTpl({score, level: getlevel(score)}));
             document.title = '看你有多色，我竟然是' + getlevel(score) + '，我得了' + score + '分，快来挑战我吧！！！'
             return 1;
         }
@@ -75,15 +75,15 @@ function init() {
     });
 
     // 再玩一次
-    $('body').on('click', '#try-again', function (e) {
+    $('.container').on('click', '#try-again', function (e) {
         restart();
         $('.wgt-end').remove();
     });
 
     // 分享
-    $('body').on('click', '.js-share', function (e) {
+    $('.container').on('click', '.js-share', function (e) {
         weibo.title = qzone.desc = '看你有多色，我竟然是' + getlevel(score) + '，我得了' + score + '分，快来挑战我吧！！！@颜海镜';
-        $('body').append(shareTpl({
+        $('.container').append(shareTpl({
             weibo: $.param(weibo),
             qzone: $.param(qzone)
         }));
@@ -94,19 +94,19 @@ function init() {
         e.preventDefault();
         $(this).remove();
     });
-    $('body').on('click', '.js-close-pop', function (e) {
+    $('.container').on('click', '.js-close-pop', function (e) {
         e.preventDefault();
         $(this).closest('.pop').remove();
     });
-    $('body').on('click', '.js-pop-content', function (e) {
+    $('.container').on('click', '.js-pop-content', function (e) {
         e.stopPropagation();
     });
 
     // 分享
-    $('body').on('click', '#share-weixin', function (e) {
-        $('body').append(weixinTpl({}));
+    $('.container').on('click', '#share-weixin', function (e) {
+        $('.container').append(weixinTpl({}));
     });
-    $('body').on('click', '#wgt-weixin', function (e) {
+    $('.container').on('click', '#wgt-weixin', function (e) {
         $(this).remove();
     });
 
