@@ -12,8 +12,6 @@ var tpl = __inline('screen.tmpl');
 var levelMap = [2, 3, 4, 5, 5, 6, 6, 7, 7, 7, 8, 8, 8, 8, 9];
 var level = 0;
 var rank = 40;
-var click = document.hasOwnProperty("ontouchstart") ? 'tap' : 'click';
-
 var list;
 
 function render() {
@@ -42,7 +40,8 @@ function render() {
 function init() {
     render();
 
-    $('#screen').on(click, '.block', function (e) {
+    $('#screen').on('touchstart, click', '.block', function (e) {
+        e.preventDefault();
         var index = $(this).data('index');
         // 点中了
         if (list[index]) {
