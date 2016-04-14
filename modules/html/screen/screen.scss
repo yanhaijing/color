@@ -5,6 +5,8 @@
     margin-top: 10px;
     padding: 1px;
     background: #ddd;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
     @include clearfix();
     .block {
         float: left;
@@ -17,6 +19,7 @@
             width: 100%;
             padding-top: 100%;
             border-radius: 2px;
+            user-select: none;
         }
     }
 }
