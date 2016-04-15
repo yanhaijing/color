@@ -53,6 +53,7 @@ function init() {
 
     ec.on('game/restart', function () {
         level = 0;
+        rank = 40;
         render();
     });
 }
