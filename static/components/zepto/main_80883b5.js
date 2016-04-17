@@ -1,0 +1,1 @@
+define("components/zepto/main",function(o,e,n){o("components/zepto/event"),o("components/zepto/ajax"),o("components/zepto/form"),o("components/zepto/ie"),n.exports=o("components/zepto/zepto")});

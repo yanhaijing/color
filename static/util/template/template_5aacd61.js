@@ -1,0 +1,1 @@
+define("modules/util/template/template.es",function(e,t){"use strict";function l(e){return e&&e.__esModule?e:{"default":e}}Object.defineProperty(t,"__esModule",{value:!0});var a=e("modules/lib/template/template"),u=l(a);u["default"].config({sTag:"<#",eTag:"#>"}),window.template=u["default"],t.template=u["default"]});
