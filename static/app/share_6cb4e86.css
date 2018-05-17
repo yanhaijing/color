@@ -5,7 +5,7 @@
 .pop .pop-body li{margin-bottom:5px}
 .pop footer{padding:10px;text-align:right;border-top:1px solid #e5e5e5}
 .wgt-share{}
-.wgt-share .share-btn a em{background-image:url(http://yanhaijing.com/color/static/app/img/sns_icon_0af1389.png);background-repeat:no-repeat}
+.wgt-share .share-btn a em{background-image:url(//yanhaijing.com/color/static/app/img/sns_icon_0af1389.png);background-repeat:no-repeat}
 .wgt-share .share-btn{width:100%;overflow:hidden;zoom:1}
 .wgt-share .share-btn a{background-color:#fff;border:1px solid #f1eddf;border-radius:4px;box-shadow:0 1px 3px #f1eddf;color:#fff;cursor:pointer;display:block;float:left;height:30px;line-height:30px;text-align:center;text-decoration:none;width:30%}
 .wgt-share .share-btn a.share-btn-weibo,.wgt-share .share-btn a.share-btn-qq,.wgt-share .share-btn a.share-btn-weixin{margin-right:2%}

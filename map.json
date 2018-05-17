@@ -1,22 +1,32 @@
 {
     "res": {
         "modules/css/common.scss": {
-            "uri": "http://yanhaijing.com/color/static/css/common_a96e666.css",
+            "uri": "//yanhaijing.com/color/static/css/common_90b3b4c.css",
             "type": "css",
             "pkg": "p0"
         },
         "modules/html/home/home.scss": {
-            "uri": "http://yanhaijing.com/color/static/html/home/home_51238fe.css",
+            "uri": "//yanhaijing.com/color/static/html/home/home_91147ba.css",
             "type": "css",
             "pkg": "p1"
         },
         "modules/html/header/header.scss": {
-            "uri": "http://yanhaijing.com/color/static/html/header/header_a6ffb96.css",
+            "uri": "//yanhaijing.com/color/static/html/header/header_a6ffb96.css",
             "type": "css",
             "pkg": "p1"
         },
+        "modules/html/footer/footer.scss": {
+            "uri": "//yanhaijing.com/color/static/html/footer/footer_0193152.css",
+            "type": "css",
+            "pkg": "p1"
+        },
+        "lib/mod.js": {
+            "uri": "//yanhaijing.com/color/static/lib/mod_4296a9b.js",
+            "type": "js",
+            "aioPkg": "pkg/index.html_aio.js"
+        },
         "modules/html/score/score.es": {
-            "uri": "http://yanhaijing.com/color/static/html/score/score_388c42e.js",
+            "uri": "//yanhaijing.com/color/static/html/score/score_388c42e.js",
             "type": "js",
             "deps": [
                 "components/zepto/main.js",
@@ -24,8 +34,39 @@
             ],
             "pkg": "p2"
         },
+        "modules/html/screen/screen.es": {
+            "uri": "//yanhaijing.com/color/static/html/screen/screen_820e08e.js",
+            "type": "js",
+            "deps": [
+                "components/zepto/main.js",
+                "components/zepto/touch.js",
+                "modules/util/event/event.es",
+                "modules/util/template/template.es",
+                "modules/html/screen/screen.scss"
+            ],
+            "pkg": "p2"
+        },
+        "modules/html/screen/screen.scss": {
+            "uri": "//yanhaijing.com/color/static/html/screen/screen_3f4f373.css",
+            "type": "css",
+            "pkg": "p1"
+        },
+        "modules/app/index.es": {
+            "uri": "//yanhaijing.com/color/static/app/index_513b21d.js",
+            "type": "js",
+            "deps": [
+                "modules/app/end.scss",
+                "modules/app/share.scss",
+                "modules/app/weixin.scss",
+                "components/zepto/main.js",
+                "modules/util/event/event.es",
+                "modules/util/template/template.es",
+                "modules/app/timer.es"
+            ],
+            "pkg": "p3"
+        },
         "components/zepto/main.js": {
-            "uri": "http://yanhaijing.com/color/static/components/zepto/main_80883b5.js",
+            "uri": "//yanhaijing.com/color/static/components/zepto/main_80883b5.js",
             "type": "js",
             "extras": {
                 "moduleId": "components/zepto/main"
@@ -37,82 +78,18 @@
                 "components/zepto/ie.js",
                 "components/zepto/zepto.js"
             ],
-            "pkg": "p3"
-        },
-        "components/zepto/event.js": {
-            "uri": "http://yanhaijing.com/color/static/components/zepto/event_93e34d8.js",
-            "type": "js",
-            "extras": {
-                "moduleId": "components/zepto/event"
-            },
-            "deps": [
-                "components/zepto/zepto.js"
-            ],
-            "pkg": "p3"
-        },
-        "components/zepto/zepto.js": {
-            "uri": "http://yanhaijing.com/color/static/components/zepto/zepto_54c72eb.js",
-            "type": "js",
-            "extras": {
-                "moduleId": "components/zepto/zepto"
-            },
-            "pkg": "p3"
-        },
-        "components/zepto/ajax.js": {
-            "uri": "http://yanhaijing.com/color/static/components/zepto/ajax_c8ac6f8.js",
-            "type": "js",
-            "extras": {
-                "moduleId": "components/zepto/ajax"
-            },
-            "deps": [
-                "components/zepto/zepto.js"
-            ],
-            "pkg": "p3"
-        },
-        "components/zepto/form.js": {
-            "uri": "http://yanhaijing.com/color/static/components/zepto/form_66f2941.js",
-            "type": "js",
-            "extras": {
-                "moduleId": "components/zepto/form"
-            },
-            "deps": [
-                "components/zepto/zepto.js"
-            ],
-            "pkg": "p3"
-        },
-        "components/zepto/ie.js": {
-            "uri": "http://yanhaijing.com/color/static/components/zepto/ie_9952db6.js",
-            "type": "js",
-            "extras": {
-                "moduleId": "components/zepto/ie"
-            },
-            "deps": [
-                "components/zepto/zepto.js"
-            ],
-            "pkg": "p3"
+            "pkg": "p4"
         },
         "modules/util/event/event.es": {
-            "uri": "http://yanhaijing.com/color/static/util/event/event_1f8d7c3.js",
+            "uri": "//yanhaijing.com/color/static/util/event/event_1f8d7c3.js",
             "type": "js",
             "deps": [
                 "components/zepto/main.js"
             ],
             "pkg": "p2"
         },
-        "modules/html/screen/screen.es": {
-            "uri": "http://yanhaijing.com/color/static/html/screen/screen_820e08e.js",
-            "type": "js",
-            "deps": [
-                "components/zepto/main.js",
-                "components/zepto/touch.js",
-                "modules/util/event/event.es",
-                "modules/util/template/template.es",
-                "modules/html/screen/screen.scss"
-            ],
-            "pkg": "p2"
-        },
         "components/zepto/touch.js": {
-            "uri": "http://yanhaijing.com/color/static/components/zepto/touch_88b39ac.js",
+            "uri": "//yanhaijing.com/color/static/components/zepto/touch_88b39ac.js",
             "type": "js",
             "extras": {
                 "moduleId": "components/zepto/touch"
@@ -120,103 +97,123 @@
             "deps": [
                 "components/zepto/zepto.js"
             ],
-            "pkg": "p3"
+            "pkg": "p4"
         },
         "modules/util/template/template.es": {
-            "uri": "http://yanhaijing.com/color/static/util/template/template_5aacd61.js",
+            "uri": "//yanhaijing.com/color/static/util/template/template_5aacd61.js",
             "type": "js",
             "deps": [
                 "modules/lib/template/template.js"
             ],
             "pkg": "p2"
         },
+        "modules/app/end.scss": {
+            "uri": "//yanhaijing.com/color/static/app/end_d6b6766.css",
+            "type": "css",
+            "pkg": "p1"
+        },
+        "modules/app/share.scss": {
+            "uri": "//yanhaijing.com/color/static/app/share_6cb4e86.css",
+            "type": "css",
+            "pkg": "p1"
+        },
+        "modules/app/weixin.scss": {
+            "uri": "//yanhaijing.com/color/static/app/weixin_5209b3b.css",
+            "type": "css",
+            "pkg": "p1"
+        },
+        "modules/app/timer.es": {
+            "uri": "//yanhaijing.com/color/static/app/timer_dca289b.js",
+            "type": "js",
+            "deps": [
+                "modules/util/event/event.es"
+            ],
+            "pkg": "p3"
+        },
+        "components/zepto/event.js": {
+            "uri": "//yanhaijing.com/color/static/components/zepto/event_93e34d8.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/zepto/event"
+            },
+            "deps": [
+                "components/zepto/zepto.js"
+            ],
+            "pkg": "p4"
+        },
+        "components/zepto/ajax.js": {
+            "uri": "//yanhaijing.com/color/static/components/zepto/ajax_c8ac6f8.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/zepto/ajax"
+            },
+            "deps": [
+                "components/zepto/zepto.js"
+            ],
+            "pkg": "p4"
+        },
+        "components/zepto/form.js": {
+            "uri": "//yanhaijing.com/color/static/components/zepto/form_66f2941.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/zepto/form"
+            },
+            "deps": [
+                "components/zepto/zepto.js"
+            ],
+            "pkg": "p4"
+        },
+        "components/zepto/ie.js": {
+            "uri": "//yanhaijing.com/color/static/components/zepto/ie_9952db6.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/zepto/ie"
+            },
+            "deps": [
+                "components/zepto/zepto.js"
+            ],
+            "pkg": "p4"
+        },
+        "components/zepto/zepto.js": {
+            "uri": "//yanhaijing.com/color/static/components/zepto/zepto_54c72eb.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/zepto/zepto"
+            },
+            "pkg": "p4"
+        },
         "modules/lib/template/template.js": {
-            "uri": "http://yanhaijing.com/color/static/lib/template/template_bd64230.js",
+            "uri": "//yanhaijing.com/color/static/lib/template/template_bd64230.js",
             "type": "js",
             "extras": {
                 "moduleId": "modules/lib/template/template"
             },
             "pkg": "p2"
-        },
-        "modules/html/screen/screen.scss": {
-            "uri": "http://yanhaijing.com/color/static/html/screen/screen_da62da1.css",
-            "type": "css",
-            "pkg": "p1"
-        },
-        "modules/html/footer/footer.scss": {
-            "uri": "http://yanhaijing.com/color/static/html/footer/footer_0193152.css",
-            "type": "css",
-            "pkg": "p1"
-        },
-        "lib/mod.js": {
-            "uri": "http://yanhaijing.com/color/static/lib/mod_4296a9b.js",
-            "type": "js"
-        },
-        "lib/baidu.js": {
-            "uri": "http://yanhaijing.com/color/static/lib/baidu_5b0f584.js",
-            "type": "js"
-        },
-        "modules/app/index.es": {
-            "uri": "http://yanhaijing.com/color/static/app/index_1d7133f.js",
-            "type": "js",
-            "deps": [
-                "modules/app/end.scss",
-                "modules/app/share.scss",
-                "modules/app/weixin.scss",
-                "components/zepto/main.js",
-                "modules/util/event/event.es",
-                "modules/util/template/template.es",
-                "modules/app/timer.es"
-            ],
-            "pkg": "p4"
-        },
-        "modules/app/end.scss": {
-            "uri": "http://yanhaijing.com/color/static/app/end_1e46138.css",
-            "type": "css",
-            "pkg": "p1"
-        },
-        "modules/app/share.scss": {
-            "uri": "http://yanhaijing.com/color/static/app/share_f2e0f9e.css",
-            "type": "css",
-            "pkg": "p1"
-        },
-        "modules/app/weixin.scss": {
-            "uri": "http://yanhaijing.com/color/static/app/weixin_90dc267.css",
-            "type": "css",
-            "pkg": "p1"
-        },
-        "modules/app/timer.es": {
-            "uri": "http://yanhaijing.com/color/static/app/timer_dca289b.js",
-            "type": "js",
-            "deps": [
-                "modules/util/event/event.es"
-            ],
-            "pkg": "p4"
         }
     },
     "pkg": {
         "p0": {
-            "uri": "http://yanhaijing.com/color/pkg/common_4465cd2.css",
+            "uri": "//yanhaijing.com/color/pkg/common_abfeb21.css",
             "type": "css",
             "has": [
                 "modules/css/common.scss"
             ]
         },
         "p1": {
-            "uri": "http://yanhaijing.com/color/pkg/modules_77d4682.css",
+            "uri": "//yanhaijing.com/color/pkg/modules_02d0280.css",
             "type": "css",
             "has": [
                 "modules/html/home/home.scss",
                 "modules/html/header/header.scss",
-                "modules/html/screen/screen.scss",
                 "modules/html/footer/footer.scss",
+                "modules/html/screen/screen.scss",
                 "modules/app/end.scss",
                 "modules/app/share.scss",
                 "modules/app/weixin.scss"
             ]
         },
         "p2": {
-            "uri": "http://yanhaijing.com/color/pkg/modules_1661af1.js",
+            "uri": "//yanhaijing.com/color/pkg/modules_0239121.js",
             "type": "js",
             "has": [
                 "modules/util/event/event.es",
@@ -232,20 +229,7 @@
             ]
         },
         "p3": {
-            "uri": "http://yanhaijing.com/color/pkg/components_8dafe6a.js",
-            "type": "js",
-            "has": [
-                "components/zepto/zepto.js",
-                "components/zepto/event.js",
-                "components/zepto/ajax.js",
-                "components/zepto/form.js",
-                "components/zepto/ie.js",
-                "components/zepto/main.js",
-                "components/zepto/touch.js"
-            ]
-        },
-        "p4": {
-            "uri": "http://yanhaijing.com/color/pkg/aio_ae62fc4.js",
+            "uri": "//yanhaijing.com/color/pkg/aio_f7a687f.js",
             "type": "js",
             "has": [
                 "modules/app/timer.es",
@@ -258,6 +242,27 @@
                 "modules/app/weixin.scss",
                 "components/zepto/main.js",
                 "modules/util/template/template.es"
+            ]
+        },
+        "p4": {
+            "uri": "//yanhaijing.com/color/pkg/components_4c5a089.js",
+            "type": "js",
+            "has": [
+                "components/zepto/zepto.js",
+                "components/zepto/event.js",
+                "components/zepto/ajax.js",
+                "components/zepto/form.js",
+                "components/zepto/ie.js",
+                "components/zepto/main.js",
+                "components/zepto/touch.js"
+            ]
+        },
+        "pkg/index.html_aio.js": {
+            "type": "js",
+            "uri": "//yanhaijing.com/color/pkg/index.html_aio_19ae42b.js",
+            "has": [
+                "lib/mod.js",
+                "pkg/index.html_map.js"
             ]
         }
     }
